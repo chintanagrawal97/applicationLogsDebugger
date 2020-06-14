@@ -1,0 +1,1696 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt/yarn/usercache/hadoop/filecache/10/__spark_libs__8474873730201561419.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+20/06/06 22:25:14 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 16575@ip-10-128-11-66
+20/06/06 22:25:14 INFO SignalUtils: Registered signal handler for TERM
+20/06/06 22:25:14 INFO SignalUtils: Registered signal handler for HUP
+20/06/06 22:25:14 INFO SignalUtils: Registered signal handler for INT
+20/06/06 22:25:15 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/06/06 22:25:15 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/06/06 22:25:15 INFO SecurityManager: Changing view acls groups to: 
+20/06/06 22:25:15 INFO SecurityManager: Changing modify acls groups to: 
+20/06/06 22:25:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/06/06 22:25:15 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-116.us-west-2.compute.internal/10.128.11.116:42673 after 111 ms (0 ms spent in bootstraps)
+20/06/06 22:25:16 WARN SparkConf: The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+20/06/06 22:25:16 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/06/06 22:25:16 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/06/06 22:25:16 INFO SecurityManager: Changing view acls groups to: 
+20/06/06 22:25:16 INFO SecurityManager: Changing modify acls groups to: 
+20/06/06 22:25:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/06/06 22:25:16 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-116.us-west-2.compute.internal/10.128.11.116:42673 after 4 ms (0 ms spent in bootstraps)
+20/06/06 22:25:16 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1591494778265_0001/blockmgr-0a5bb59d-63c8-4487-ab9f-370cf46429b4
+20/06/06 22:25:16 INFO MemoryStore: MemoryStore started with capacity 9.4 GB
+20/06/06 22:25:16 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ip-10-128-11-116.us-west-2.compute.internal:42673
+20/06/06 22:25:16 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/06/06 22:25:16 INFO Executor: Starting executor ID 754 on host ip-10-128-11-66.us-west-2.compute.internal
+20/06/06 22:25:16 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43611.
+20/06/06 22:25:16 INFO NettyBlockTransferService: Server created on ip-10-128-11-66.us-west-2.compute.internal:43611
+20/06/06 22:25:16 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/06/06 22:25:16 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(754, ip-10-128-11-66.us-west-2.compute.internal, 43611, None)
+20/06/06 22:25:16 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(754, ip-10-128-11-66.us-west-2.compute.internal, 43611, None)
+20/06/06 22:25:16 INFO BlockManager: external shuffle service port = 7337
+20/06/06 22:25:16 INFO BlockManager: Registering executor with local external shuffle service.
+20/06/06 22:25:16 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-66.us-west-2.compute.internal/10.128.11.66:7337 after 1 ms (0 ms spent in bootstraps)
+20/06/06 22:25:16 INFO BlockManager: Initialized BlockManager: BlockManagerId(754, ip-10-128-11-66.us-west-2.compute.internal, 43611, None)
+20/06/06 22:25:21 INFO CoarseGrainedExecutorBackend: Got assigned task 9595
+20/06/06 22:25:21 INFO CoarseGrainedExecutorBackend: Got assigned task 9697
+20/06/06 22:25:21 INFO CoarseGrainedExecutorBackend: Got assigned task 9785
+20/06/06 22:25:21 INFO Executor: Running task 111.0 in stage 16.1 (TID 9697)
+20/06/06 22:25:21 INFO Executor: Running task 9.0 in stage 16.1 (TID 9595)
+20/06/06 22:25:21 INFO Executor: Running task 199.0 in stage 16.1 (TID 9785)
+20/06/06 22:25:21 INFO MapOutputTrackerWorker: Updating epoch to 62 and clearing cache
+20/06/06 22:25:22 INFO TorrentBroadcast: Started reading broadcast variable 60
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-52.us-west-2.compute.internal/10.128.11.52:41355 after 2 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO MemoryStore: Block broadcast_60_piece0 stored as bytes in memory (estimated size 11.7 KB, free 9.4 GB)
+20/06/06 22:25:22 INFO TorrentBroadcast: Reading broadcast variable 60 took 177 ms
+20/06/06 22:25:22 INFO MemoryStore: Block broadcast_60 stored as values in memory (estimated size 24.3 KB, free 9.4 GB)
+20/06/06 22:25:22 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 14, fetching them
+20/06/06 22:25:22 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:25:22 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 14, fetching them
+20/06/06 22:25:22 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 14, fetching them
+20/06/06 22:25:22 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:25:22 INFO ShuffleBlockFetcherIterator: Getting 219 non-empty blocks including 0 local blocks and 219 remote blocks
+20/06/06 22:25:22 INFO ShuffleBlockFetcherIterator: Getting 219 non-empty blocks including 0 local blocks and 219 remote blocks
+20/06/06 22:25:22 INFO ShuffleBlockFetcherIterator: Getting 219 non-empty blocks including 0 local blocks and 219 remote blocks
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-54.us-west-2.compute.internal/10.128.11.54:7337 after 10 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-205.us-west-2.compute.internal/10.128.11.205:7337 after 11 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-52.us-west-2.compute.internal/10.128.11.52:7337 after 23 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-90.us-west-2.compute.internal/10.128.11.90:7337 after 21 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-83.us-west-2.compute.internal/10.128.11.83:7337 after 19 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-198.us-west-2.compute.internal/10.128.11.198:7337 after 2 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-131.us-west-2.compute.internal/10.128.11.131:7337 after 24 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-116.us-west-2.compute.internal/10.128.11.116:7337 after 33 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-76.us-west-2.compute.internal/10.128.11.76:7337 after 5 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-171.us-west-2.compute.internal/10.128.11.171:7337 after 5 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-38.us-west-2.compute.internal/10.128.11.38:7337 after 3 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-58.us-west-2.compute.internal/10.128.11.58:7337 after 4 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-100.us-west-2.compute.internal/10.128.11.100:7337 after 1 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-72.us-west-2.compute.internal/10.128.11.72:7337 after 8 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-151.us-west-2.compute.internal/10.128.11.151:7337 after 5 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-145.us-west-2.compute.internal/10.128.11.145:7337 after 4 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-42.us-west-2.compute.internal/10.128.11.42:7337 after 11 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-183.us-west-2.compute.internal/10.128.11.183:7337 after 4 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-98.us-west-2.compute.internal/10.128.11.98:7337 after 9 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-215.us-west-2.compute.internal/10.128.11.215:7337 after 2 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-56.us-west-2.compute.internal/10.128.11.56:7337 after 7 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-193.us-west-2.compute.internal/10.128.11.193:7337 after 10 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-31.us-west-2.compute.internal/10.128.11.31:7337 after 1 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-60.us-west-2.compute.internal/10.128.11.60:7337 after 2 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-94.us-west-2.compute.internal/10.128.11.94:7337 after 4 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-47.us-west-2.compute.internal/10.128.11.47:7337 after 20 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-86.us-west-2.compute.internal/10.128.11.86:7337 after 6 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-102.us-west-2.compute.internal/10.128.11.102:7337 after 0 ms (0 ms spent in bootstraps)
+20/06/06 22:25:22 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-181.us-west-2.compute.internal/10.128.11.181:7337 after 10 ms (0 ms spent in bootstraps)
+20/06/06 22:25:23 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-66.us-west-2.compute.internal/10.128.11.66:7337 after 17 ms (0 ms spent in bootstraps)
+20/06/06 22:25:23 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-253.us-west-2.compute.internal/10.128.11.253:7337 after 39 ms (0 ms spent in bootstraps)
+20/06/06 22:25:23 INFO ShuffleBlockFetcherIterator: Started 123 remote fetches in 238 ms
+20/06/06 22:25:23 INFO ShuffleBlockFetcherIterator: Started 123 remote fetches in 244 ms
+20/06/06 22:25:23 INFO ShuffleBlockFetcherIterator: Started 123 remote fetches in 254 ms
+20/06/06 22:25:23 INFO CodeGenerator: Code generated in 376.273715 ms
+20/06/06 22:25:23 INFO CodeGenerator: Code generated in 15.81831 ms
+20/06/06 22:25:23 INFO CodeGenerator: Code generated in 24.274512 ms
+20/06/06 22:25:23 INFO CodeGenerator: Code generated in 16.904994 ms
+20/06/06 22:25:25 INFO Executor: Finished task 111.0 in stage 16.1 (TID 9697). 3320 bytes result sent to driver
+20/06/06 22:25:25 INFO Executor: Finished task 9.0 in stage 16.1 (TID 9595). 3320 bytes result sent to driver
+20/06/06 22:25:25 INFO Executor: Finished task 199.0 in stage 16.1 (TID 9785). 3320 bytes result sent to driver
+20/06/06 22:25:55 INFO CoarseGrainedExecutorBackend: Got assigned task 9927
+20/06/06 22:25:55 INFO Executor: Running task 121.0 in stage 11.1 (TID 9927)
+20/06/06 22:25:55 INFO CoarseGrainedExecutorBackend: Got assigned task 10043
+20/06/06 22:25:55 INFO Executor: Running task 237.0 in stage 11.1 (TID 10043)
+20/06/06 22:25:55 INFO CoarseGrainedExecutorBackend: Got assigned task 10159
+20/06/06 22:25:55 INFO Executor: Running task 353.0 in stage 11.1 (TID 10159)
+20/06/06 22:25:55 INFO MapOutputTrackerWorker: Updating epoch to 69 and clearing cache
+20/06/06 22:25:55 INFO TorrentBroadcast: Started reading broadcast variable 61
+20/06/06 22:25:55 INFO MemoryStore: Block broadcast_61_piece0 stored as bytes in memory (estimated size 33.3 KB, free 9.4 GB)
+20/06/06 22:25:55 INFO TorrentBroadcast: Reading broadcast variable 61 took 7 ms
+20/06/06 22:25:55 INFO MemoryStore: Block broadcast_61 stored as values in memory (estimated size 97.6 KB, free 9.4 GB)
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Getting 100 non-empty blocks including 0 local blocks and 100 remote blocks
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Getting 100 non-empty blocks including 0 local blocks and 100 remote blocks
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Getting 100 non-empty blocks including 0 local blocks and 100 remote blocks
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Started 27 remote fetches in 25 ms
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Started 24 remote fetches in 78 ms
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Started 27 remote fetches in 119 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 112.915963 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 46.997103 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 35.967159 ms
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 1, fetching them
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 1, fetching them
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 1, fetching them
+20/06/06 22:25:56 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 0 local blocks and 18 remote blocks
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 0 local blocks and 18 remote blocks
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 0 local blocks and 18 remote blocks
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Started 13 remote fetches in 19 ms
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Started 13 remote fetches in 43 ms
+20/06/06 22:25:56 INFO ShuffleBlockFetcherIterator: Started 13 remote fetches in 76 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 57.224314 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 25.892144 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 16.489304 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 40.564494 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 50.090021 ms
+20/06/06 22:25:56 INFO CodeGenerator: Code generated in 33.291849 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 27.832321 ms
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 2, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 2, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 265 non-empty blocks including 0 local blocks and 265 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 265 non-empty blocks including 0 local blocks and 265 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 76 remote fetches in 12 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 76 remote fetches in 17 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 24.504556 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 265 non-empty blocks including 0 local blocks and 265 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 76 remote fetches in 10 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 21.619974 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 14.174825 ms
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 3, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 3, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 14.113446 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 21.499922 ms
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 4, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 4, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 5 remote fetches in 1 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 5 remote fetches in 1 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 12.346151 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 13.883499 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 5 remote fetches in 1 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 11.01362 ms
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 5, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 5, fetching them
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:00 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 1 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 1 ms
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:00 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 0 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 21.742124 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 5.279532 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 6.918627 ms
+20/06/06 22:26:00 INFO CodeGenerator: Code generated in 15.622361 ms
+20/06/06 22:26:01 INFO CodeGenerator: Code generated in 17.942674 ms
+20/06/06 22:26:01 INFO CodeGenerator: Code generated in 23.058762 ms
+20/06/06 22:26:14 INFO Executor: Finished task 121.0 in stage 11.1 (TID 9927). 7516 bytes result sent to driver
+20/06/06 22:26:14 INFO Executor: Finished task 353.0 in stage 11.1 (TID 10159). 7559 bytes result sent to driver
+20/06/06 22:26:14 INFO Executor: Finished task 237.0 in stage 11.1 (TID 10043). 7516 bytes result sent to driver
+20/06/06 22:26:23 INFO CoarseGrainedExecutorBackend: Got assigned task 10266
+20/06/06 22:26:23 INFO Executor: Running task 38.0 in stage 19.1 (TID 10266)
+20/06/06 22:26:23 INFO CoarseGrainedExecutorBackend: Got assigned task 10372
+20/06/06 22:26:23 INFO Executor: Running task 178.0 in stage 19.1 (TID 10372)
+20/06/06 22:26:23 INFO MapOutputTrackerWorker: Updating epoch to 70 and clearing cache
+20/06/06 22:26:23 INFO TorrentBroadcast: Started reading broadcast variable 62
+20/06/06 22:26:23 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-47.us-west-2.compute.internal/10.128.11.47:36547 after 1 ms (0 ms spent in bootstraps)
+20/06/06 22:26:23 INFO MemoryStore: Block broadcast_62_piece0 stored as bytes in memory (estimated size 47.0 KB, free 9.4 GB)
+20/06/06 22:26:23 INFO TorrentBroadcast: Reading broadcast variable 62 took 10 ms
+20/06/06 22:26:23 INFO MemoryStore: Block broadcast_62 stored as values in memory (estimated size 136.7 KB, free 9.4 GB)
+20/06/06 22:26:23 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 6, fetching them
+20/06/06 22:26:23 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:23 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 6, fetching them
+20/06/06 22:26:23 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:23 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:26:23 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:26:23 INFO ShuffleBlockFetcherIterator: Started 59 remote fetches in 7 ms
+20/06/06 22:26:23 INFO ShuffleBlockFetcherIterator: Started 59 remote fetches in 25 ms
+20/06/06 22:26:23 INFO CodeGenerator: Code generated in 25.076429 ms
+20/06/06 22:26:23 INFO CodeGenerator: Code generated in 18.20621 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 22.528902 ms
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 7, fetching them
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 1 ms
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 17 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 20.459915 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 47.205349 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 10.56226 ms
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 8, fetching them
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 8, fetching them
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 1 ms
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 1 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 78.391987 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 8.099608 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 27.925358 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 16.015659 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 16.475392 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 23.055882 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 8.069722 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 37.978984 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 12.913893 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 6.593458 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 6.713706 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 26.233917 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 70.893091 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 10.196833 ms
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 9, fetching them
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 9, fetching them
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 5 remote fetches in 0 ms
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 5 remote fetches in 0 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 43.800334 ms
+20/06/06 22:26:24 INFO CodeGenerator: Code generated in 46.048247 ms
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 10, fetching them
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 10, fetching them
+20/06/06 22:26:24 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 83 non-empty blocks including 0 local blocks and 83 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 44 remote fetches in 7 ms
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Getting 83 non-empty blocks including 0 local blocks and 83 remote blocks
+20/06/06 22:26:24 INFO ShuffleBlockFetcherIterator: Started 44 remote fetches in 2 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 47.533917 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 5.766125 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 29.629714 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 22.218506 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 28.026621 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 71.103343 ms
+20/06/06 22:26:25 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 11, fetching them
+20/06/06 22:26:25 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:25 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 11, fetching them
+20/06/06 22:26:25 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:25 INFO ShuffleBlockFetcherIterator: Getting 81 non-empty blocks including 0 local blocks and 81 remote blocks
+20/06/06 22:26:25 INFO ShuffleBlockFetcherIterator: Started 42 remote fetches in 2 ms
+20/06/06 22:26:25 INFO ShuffleBlockFetcherIterator: Getting 82 non-empty blocks including 0 local blocks and 82 remote blocks
+20/06/06 22:26:25 INFO ShuffleBlockFetcherIterator: Started 42 remote fetches in 2 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 58.253293 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 54.364867 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 22.197558 ms
+20/06/06 22:26:25 INFO CodeGenerator: Code generated in 59.083252 ms
+20/06/06 22:26:32 INFO Executor: Finished task 38.0 in stage 19.1 (TID 10266). 14930 bytes result sent to driver
+20/06/06 22:26:32 INFO Executor: Finished task 178.0 in stage 19.1 (TID 10372). 14930 bytes result sent to driver
+20/06/06 22:26:39 INFO CoarseGrainedExecutorBackend: Got assigned task 10593
+20/06/06 22:26:39 INFO Executor: Running task 320.0 in stage 21.0 (TID 10593)
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Updating epoch to 71 and clearing cache
+20/06/06 22:26:39 INFO TorrentBroadcast: Started reading broadcast variable 63
+20/06/06 22:26:39 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-66.us-west-2.compute.internal/10.128.11.66:34037 after 1 ms (0 ms spent in bootstraps)
+20/06/06 22:26:39 INFO MemoryStore: Block broadcast_63_piece0 stored as bytes in memory (estimated size 73.7 KB, free 9.4 GB)
+20/06/06 22:26:39 INFO TorrentBroadcast: Reading broadcast variable 63 took 13 ms
+20/06/06 22:26:39 INFO MemoryStore: Block broadcast_63 stored as values in memory (estimated size 335.0 KB, free 9.4 GB)
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 12, fetching them
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 2 local blocks and 398 remote blocks
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Started 70 remote fetches in 15 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 16.174102 ms
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 13, fetching them
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Getting 0 non-empty blocks including 0 local blocks and 0 remote blocks
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 40.886238 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 12.016158 ms
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 15, fetching them
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Started 173 remote fetches in 15 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 36.016228 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 13.475413 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 8.122178 ms
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 16, fetching them
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Getting 556 non-empty blocks including 0 local blocks and 556 remote blocks
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Started 150 remote fetches in 4 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 12.210503 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 10.515374 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 7.984773 ms
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 18, fetching them
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:26:39 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 0 local blocks and 400 remote blocks
+20/06/06 22:26:39 INFO ShuffleBlockFetcherIterator: Started 59 remote fetches in 3 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 9.105168 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 4.570953 ms
+20/06/06 22:26:39 INFO CodeGenerator: Code generated in 3.924476 ms
+20/06/06 22:26:40 INFO CodeGenerator: Code generated in 6.552165 ms
+20/06/06 22:26:40 INFO CodeGenerator: Code generated in 4.061351 ms
+20/06/06 22:26:40 INFO CodeGenerator: Code generated in 8.222154 ms
+20/06/06 22:26:40 INFO CodeGenerator: Code generated in 11.03179 ms
+20/06/06 22:26:42 INFO CoarseGrainedExecutorBackend: Got assigned task 10651
+20/06/06 22:26:42 INFO CoarseGrainedExecutorBackend: Got assigned task 10756
+20/06/06 22:26:42 INFO Executor: Running task 137.0 in stage 21.0 (TID 10651)
+20/06/06 22:26:42 INFO Executor: Running task 294.0 in stage 21.0 (TID 10756)
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 2 local blocks and 398 remote blocks
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Started 75 remote fetches in 7 ms
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 2 local blocks and 398 remote blocks
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Started 84 remote fetches in 27 ms
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+20/06/06 22:26:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+20/06/06 22:26:43 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:26:43 INFO ShuffleBlockFetcherIterator: Started 173 remote fetches in 19 ms
+20/06/06 22:26:43 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:26:43 INFO ShuffleBlockFetcherIterator: Started 173 remote fetches in 10 ms
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Getting 556 non-empty blocks including 0 local blocks and 556 remote blocks
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Started 150 remote fetches in 9 ms
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Getting 556 non-empty blocks including 0 local blocks and 556 remote blocks
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Started 150 remote fetches in 6 ms
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 0 local blocks and 400 remote blocks
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Started 59 remote fetches in 3 ms
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 0 local blocks and 400 remote blocks
+20/06/06 22:26:46 INFO ShuffleBlockFetcherIterator: Started 59 remote fetches in 3 ms
+20/06/06 22:26:51 INFO Executor: Finished task 320.0 in stage 21.0 (TID 10593). 20737 bytes result sent to driver
+20/06/06 22:26:57 INFO Executor: Finished task 294.0 in stage 21.0 (TID 10756). 20737 bytes result sent to driver
+20/06/06 22:26:59 INFO Executor: Finished task 137.0 in stage 21.0 (TID 10651). 20737 bytes result sent to driver
+20/06/06 22:27:49 INFO CoarseGrainedExecutorBackend: Got assigned task 10980
+20/06/06 22:27:49 INFO Executor: Running task 121.0 in stage 22.0 (TID 10980)
+20/06/06 22:27:49 INFO CoarseGrainedExecutorBackend: Got assigned task 11102
+20/06/06 22:27:49 INFO Executor: Running task 243.0 in stage 22.0 (TID 11102)
+20/06/06 22:27:49 INFO CoarseGrainedExecutorBackend: Got assigned task 11224
+20/06/06 22:27:49 INFO Executor: Running task 365.0 in stage 22.0 (TID 11224)
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Updating epoch to 73 and clearing cache
+20/06/06 22:27:49 INFO TorrentBroadcast: Started reading broadcast variable 65
+20/06/06 22:27:49 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-66.us-west-2.compute.internal/10.128.11.66:33515 after 0 ms (0 ms spent in bootstraps)
+20/06/06 22:27:49 INFO MemoryStore: Block broadcast_65_piece0 stored as bytes in memory (estimated size 177.8 KB, free 9.4 GB)
+20/06/06 22:27:49 INFO TorrentBroadcast: Reading broadcast variable 65 took 98 ms
+20/06/06 22:27:49 INFO MemoryStore: Block broadcast_65 stored as values in memory (estimated size 705.6 KB, free 9.4 GB)
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 19, fetching them
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Started 43 remote fetches in 2 ms
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Started 43 remote fetches in 1 ms
+20/06/06 22:27:49 INFO CodeGenerator: Code generated in 30.052526 ms
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Getting 400 non-empty blocks including 3 local blocks and 397 remote blocks
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Started 43 remote fetches in 2 ms
+20/06/06 22:27:49 INFO CodeGenerator: Code generated in 42.640624 ms
+20/06/06 22:27:49 INFO CodeGenerator: Code generated in 60.453271 ms
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 20, fetching them
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 20, fetching them
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-10-128-11-116.us-west-2.compute.internal:42673)
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 20, fetching them
+20/06/06 22:27:49 INFO MapOutputTrackerWorker: Got the output locations
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Getting 47 non-empty blocks including 0 local blocks and 47 remote blocks
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Getting 47 non-empty blocks including 0 local blocks and 47 remote blocks
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Started 46 remote fetches in 1 ms
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Started 46 remote fetches in 1 ms
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Getting 47 non-empty blocks including 0 local blocks and 47 remote blocks
+20/06/06 22:27:49 INFO ShuffleBlockFetcherIterator: Started 46 remote fetches in 1 ms
+20/06/06 22:27:49 INFO CodeGenerator: Code generated in 29.884658 ms
+20/06/06 22:27:49 INFO CodeGenerator: Code generated in 8.279205 ms
+20/06/06 22:27:49 INFO CodeGenerator: Code generated in 21.612623 ms
+20/06/06 22:27:49 INFO CodeGenerator: Code generated in 10.245463 ms
+20/06/06 22:27:50 INFO CodeGenerator: Code generated in 68.879809 ms
+20/06/06 22:27:50 INFO CodeGenerator: Code generated in 9.54216 ms
+20/06/06 22:27:50 INFO CodeGenerator: Code generated in 9.933027 ms
+20/06/06 22:27:56 INFO CodeGenerator: Generated method too long to be JIT compiled: org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage50.processNext is 23250 bytes
+20/06/06 22:27:56 INFO CodeGenerator: Code generated in 275.013501 ms
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt1/s3
+java.nio.file.AccessDeniedException: /mnt1
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt1/s3
+java.nio.file.AccessDeniedException: /mnt1
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt1/s3
+java.nio.file.AccessDeniedException: /mnt1
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt2/s3
+java.nio.file.AccessDeniedException: /mnt2
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt3/s3
+java.nio.file.AccessDeniedException: /mnt3
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt4/s3
+java.nio.file.AccessDeniedException: /mnt4
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt2/s3
+java.nio.file.AccessDeniedException: /mnt2
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt3/s3
+java.nio.file.AccessDeniedException: /mnt3
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt4/s3
+java.nio.file.AccessDeniedException: /mnt4
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt5/s3
+java.nio.file.AccessDeniedException: /mnt5
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt6/s3
+java.nio.file.AccessDeniedException: /mnt6
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt7/s3
+java.nio.file.AccessDeniedException: /mnt7
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt2/s3
+java.nio.file.AccessDeniedException: /mnt2
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt8/s3
+java.nio.file.AccessDeniedException: /mnt8
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt5/s3
+java.nio.file.AccessDeniedException: /mnt5
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt9/s3
+java.nio.file.AccessDeniedException: /mnt9
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt3/s3
+java.nio.file.AccessDeniedException: /mnt3
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt10/s3
+java.nio.file.AccessDeniedException: /mnt10
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt6/s3
+java.nio.file.AccessDeniedException: /mnt6
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt11/s3
+java.nio.file.AccessDeniedException: /mnt11
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt4/s3
+java.nio.file.AccessDeniedException: /mnt4
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt5/s3
+java.nio.file.AccessDeniedException: /mnt5
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt6/s3
+java.nio.file.AccessDeniedException: /mnt6
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt7/s3
+java.nio.file.AccessDeniedException: /mnt7
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt7/s3
+java.nio.file.AccessDeniedException: /mnt7
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt8/s3
+java.nio.file.AccessDeniedException: /mnt8
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt9/s3
+java.nio.file.AccessDeniedException: /mnt9
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt10/s3
+java.nio.file.AccessDeniedException: /mnt10
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt11/s3
+java.nio.file.AccessDeniedException: /mnt11
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt8/s3
+java.nio.file.AccessDeniedException: /mnt8
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt9/s3
+java.nio.file.AccessDeniedException: /mnt9
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt10/s3
+java.nio.file.AccessDeniedException: /mnt10
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:00 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt11/s3
+java.nio.file.AccessDeniedException: /mnt11
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:123)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.<init>(FileOutputCommitter.java:103)
+	at org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter.<init>(DirectFileOutputCommitter.java:31)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.getOutputCommitter(FileOutputFormat.java:310)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupCommitter(HadoopMapReduceCommitProtocol.scala:100)
+	at org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol.setupCommitter(SQLHadoopMapReduceCommitProtocol.scala:40)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupTask(HadoopMapReduceCommitProtocol.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.org$apache$spark$sql$execution$datasources$FileFormatWriter$$executeTask(FileFormatWriter.scala:229)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:170)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$anonfun$write$1.apply(FileFormatWriter.scala:169)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 22:28:01 INFO FileOutputCommitter: File Output Committer Algorithm version is 2
+20/06/06 22:28:01 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: true
+20/06/06 22:28:01 INFO FileOutputCommitter: File Output Committer Algorithm version is 2
+20/06/06 22:28:01 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: true
+20/06/06 22:28:01 INFO DirectFileOutputCommitter: Direct Write: ENABLED
+20/06/06 22:28:01 INFO DirectFileOutputCommitter: Direct Write: ENABLED
+20/06/06 22:28:01 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter
+20/06/06 22:28:01 INFO FileOutputCommitter: File Output Committer Algorithm version is 2
+20/06/06 22:28:01 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: true
+20/06/06 22:28:01 INFO DirectFileOutputCommitter: Direct Write: ENABLED
+20/06/06 22:28:01 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter
+20/06/06 22:28:01 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter
+20/06/06 22:28:09 INFO MemoryManagerImpl: orc.rows.between.memory.checks=5000
+20/06/06 22:28:09 INFO MemoryManagerImpl: orc.rows.between.memory.checks=5000
+20/06/06 22:28:09 INFO PhysicalFsWriter: ORC writer created for path: s3://imvudata/user/hive/warehouse/analysts_shared.db/customers360/part-00365-b0110de9-9fe5-467c-ba9d-b02d8d86ee58-c000.snappy.orc with stripeSize: 67108864 blockSize: 268435456 compression: SNAPPY bufferSize: 131072
+20/06/06 22:28:09 INFO PhysicalFsWriter: ORC writer created for path: s3://imvudata/user/hive/warehouse/analysts_shared.db/customers360/part-00121-b0110de9-9fe5-467c-ba9d-b02d8d86ee58-c000.snappy.orc with stripeSize: 67108864 blockSize: 268435456 compression: SNAPPY bufferSize: 131072
+20/06/06 22:28:09 INFO MemoryManagerImpl: orc.rows.between.memory.checks=5000
+20/06/06 22:28:09 INFO PhysicalFsWriter: ORC writer created for path: s3://imvudata/user/hive/warehouse/analysts_shared.db/customers360/part-00243-b0110de9-9fe5-467c-ba9d-b02d8d86ee58-c000.snappy.orc with stripeSize: 67108864 blockSize: 268435456 compression: SNAPPY bufferSize: 131072
+20/06/06 22:28:10 INFO OrcCodecPool: Got brand-new codec SNAPPY
+20/06/06 22:28:10 INFO OrcCodecPool: Got brand-new codec SNAPPY
+20/06/06 22:28:10 INFO OrcCodecPool: Got brand-new codec SNAPPY
+20/06/06 22:28:10 INFO WriterImpl: ORC writer created for path: s3://imvudata/user/hive/warehouse/analysts_shared.db/customers360/part-00121-b0110de9-9fe5-467c-ba9d-b02d8d86ee58-c000.snappy.orc with stripeSize: 67108864 blockSize: 268435456 compression: SNAPPY bufferSize: 131072
+20/06/06 22:28:10 INFO WriterImpl: ORC writer created for path: s3://imvudata/user/hive/warehouse/analysts_shared.db/customers360/part-00243-b0110de9-9fe5-467c-ba9d-b02d8d86ee58-c000.snappy.orc with stripeSize: 67108864 blockSize: 268435456 compression: SNAPPY bufferSize: 131072
+20/06/06 22:28:10 INFO WriterImpl: ORC writer created for path: s3://imvudata/user/hive/warehouse/analysts_shared.db/customers360/part-00365-b0110de9-9fe5-467c-ba9d-b02d8d86ee58-c000.snappy.orc with stripeSize: 67108864 blockSize: 268435456 compression: SNAPPY bufferSize: 131072
+20/06/06 22:28:55 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20200606190350_0022_m_000121_10980
+20/06/06 22:28:55 INFO Executor: Finished task 121.0 in stage 22.0 (TID 10980). 22359 bytes result sent to driver
+20/06/06 22:28:56 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20200606190350_0022_m_000243_11102
+20/06/06 22:28:56 INFO Executor: Finished task 243.0 in stage 22.0 (TID 11102). 22316 bytes result sent to driver
+20/06/06 22:28:56 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20200606190350_0022_m_000365_11224
+20/06/06 22:28:56 INFO Executor: Finished task 365.0 in stage 22.0 (TID 11224). 22316 bytes result sent to driver
+20/06/06 22:29:37 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+20/06/06 22:29:37 INFO MemoryStore: MemoryStore cleared
+20/06/06 22:29:37 INFO BlockManager: BlockManager stopped
+20/06/06 22:29:37 INFO ShutdownHookManager: Shutdown hook called

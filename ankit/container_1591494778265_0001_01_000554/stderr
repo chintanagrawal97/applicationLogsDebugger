@@ -1,0 +1,697 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt/yarn/usercache/hadoop/filecache/10/__spark_libs__8474873730201561419.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+20/06/06 20:59:42 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 12650@ip-10-128-11-54
+20/06/06 20:59:42 INFO SignalUtils: Registered signal handler for TERM
+20/06/06 20:59:42 INFO SignalUtils: Registered signal handler for HUP
+20/06/06 20:59:42 INFO SignalUtils: Registered signal handler for INT
+20/06/06 20:59:43 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/06/06 20:59:43 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/06/06 20:59:43 INFO SecurityManager: Changing view acls groups to: 
+20/06/06 20:59:43 INFO SecurityManager: Changing modify acls groups to: 
+20/06/06 20:59:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/06/06 20:59:44 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-116.us-west-2.compute.internal/10.128.11.116:42673 after 101 ms (0 ms spent in bootstraps)
+20/06/06 20:59:44 WARN SparkConf: The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+20/06/06 20:59:44 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/06/06 20:59:44 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/06/06 20:59:44 INFO SecurityManager: Changing view acls groups to: 
+20/06/06 20:59:44 INFO SecurityManager: Changing modify acls groups to: 
+20/06/06 20:59:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/06/06 20:59:44 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-116.us-west-2.compute.internal/10.128.11.116:42673 after 1 ms (0 ms spent in bootstraps)
+20/06/06 20:59:44 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1591494778265_0001/blockmgr-f51e1aea-4d8c-40f2-8375-646c8918f166
+20/06/06 20:59:44 INFO MemoryStore: MemoryStore started with capacity 9.4 GB
+20/06/06 20:59:44 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ip-10-128-11-116.us-west-2.compute.internal:42673
+20/06/06 20:59:44 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/06/06 20:59:44 INFO Executor: Starting executor ID 405 on host ip-10-128-11-54.us-west-2.compute.internal
+20/06/06 20:59:44 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44891.
+20/06/06 20:59:44 INFO NettyBlockTransferService: Server created on ip-10-128-11-54.us-west-2.compute.internal:44891
+20/06/06 20:59:44 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/06/06 20:59:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(405, ip-10-128-11-54.us-west-2.compute.internal, 44891, None)
+20/06/06 20:59:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(405, ip-10-128-11-54.us-west-2.compute.internal, 44891, None)
+20/06/06 20:59:44 INFO BlockManager: external shuffle service port = 7337
+20/06/06 20:59:44 INFO BlockManager: Registering executor with local external shuffle service.
+20/06/06 20:59:44 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-54.us-west-2.compute.internal/10.128.11.54:7337 after 1 ms (0 ms spent in bootstraps)
+20/06/06 20:59:44 INFO BlockManager: Initialized BlockManager: BlockManagerId(405, ip-10-128-11-54.us-west-2.compute.internal, 44891, None)
+20/06/06 20:59:44 INFO CoarseGrainedExecutorBackend: Got assigned task 7470
+20/06/06 20:59:44 INFO Executor: Running task 280.0 in stage 14.5 (TID 7470)
+20/06/06 20:59:44 INFO MapOutputTrackerWorker: Updating epoch to 34 and clearing cache
+20/06/06 20:59:44 INFO TorrentBroadcast: Started reading broadcast variable 40
+20/06/06 20:59:45 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-54.us-west-2.compute.internal/10.128.11.54:34199 after 1 ms (0 ms spent in bootstraps)
+20/06/06 20:59:45 INFO MemoryStore: Block broadcast_40_piece0 stored as bytes in memory (estimated size 25.6 KB, free 9.4 GB)
+20/06/06 20:59:45 INFO TorrentBroadcast: Reading broadcast variable 40 took 168 ms
+20/06/06 20:59:45 INFO MemoryStore: Block broadcast_40 stored as values in memory (estimated size 189.6 KB, free 9.4 GB)
+20/06/06 20:59:45 INFO CodeGenerator: Code generated in 325.983676 ms
+20/06/06 20:59:46 INFO CodeGenerator: Code generated in 31.202074 ms
+20/06/06 20:59:46 INFO CodeGenerator: Code generated in 21.145384 ms
+20/06/06 20:59:46 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2019/month=2/day=8/000060_0, range: 0-4058, partition values: [2019,2,8]
+20/06/06 20:59:46 INFO TorrentBroadcast: Started reading broadcast variable 15
+20/06/06 20:59:46 INFO TransportClientFactory: Successfully created connection to ip-10-128-11-54.us-west-2.compute.internal/10.128.11.54:41719 after 2 ms (0 ms spent in bootstraps)
+20/06/06 20:59:46 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 39.2 KB, free 9.4 GB)
+20/06/06 20:59:46 INFO TorrentBroadcast: Reading broadcast variable 15 took 69 ms
+20/06/06 20:59:46 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 595.0 KB, free 9.4 GB)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt1/s3
+java.nio.file.AccessDeniedException: /mnt1
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt2/s3
+java.nio.file.AccessDeniedException: /mnt2
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt3/s3
+java.nio.file.AccessDeniedException: /mnt3
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt4/s3
+java.nio.file.AccessDeniedException: /mnt4
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt5/s3
+java.nio.file.AccessDeniedException: /mnt5
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt6/s3
+java.nio.file.AccessDeniedException: /mnt6
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt7/s3
+java.nio.file.AccessDeniedException: /mnt7
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt8/s3
+java.nio.file.AccessDeniedException: /mnt8
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt9/s3
+java.nio.file.AccessDeniedException: /mnt9
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt10/s3
+java.nio.file.AccessDeniedException: /mnt10
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 WARN ConfigurationUtils: Cannot create temp dir with proper permission: /mnt11/s3
+java.nio.file.AccessDeniedException: /mnt11
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at com.amazon.ws.emr.hadoop.fs.util.ConfigurationUtils.getTestedTempPaths(ConfigurationUtils.java:258)
+	at com.amazon.ws.emr.hadoop.fs.consistency.ConsistencyCheckerS3FileSystem.<init>(ConsistencyCheckerS3FileSystem.java:160)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.createConsistencyCheckerFileSystem(S3NativeFileSystem2.java:405)
+	at com.amazon.ws.emr.hadoop.fs.s3n2.S3NativeFileSystem2.initialize(S3NativeFileSystem2.java:89)
+	at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:112)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2859)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:99)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2896)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2878)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:392)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:179)
+	at org.apache.spark.sql.execution.datasources.orc.OrcFileFormat$$anonfun$buildReaderWithPartitionValues$2.apply(OrcFileFormat.scala:174)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:124)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:177)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:101)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.scan_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.sort_addToSorter_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage43.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$13$$anon$1.hasNext(WholeStageCodegenExec.scala:636)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:80)
+	at org.apache.spark.sql.execution.aggregate.SortAggregateExec$$anonfun$doExecute$1$$anonfun$3.apply(SortAggregateExec.scala:77)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndexInternal$1$$anonfun$12.apply(RDD.scala:823)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:55)
+	at org.apache.spark.scheduler.Task.run(Task.scala:121)
+	at org.apache.spark.executor.Executor$TaskRunner$$anonfun$10.apply(Executor.scala:408)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1360)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20/06/06 20:59:48 INFO OrcCodecPool: Got brand-new codec SNAPPY
+20/06/06 20:59:48 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2019/month=2/day=8/000060_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4058, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:49 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:49 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2019/month=1/day=15/000058_0, range: 0-4052, partition values: [2019,1,15]
+20/06/06 20:59:50 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2019/month=1/day=15/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4052, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:50 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:50 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2019/month=2/day=4/000055_0, range: 0-4048, partition values: [2019,2,4]
+20/06/06 20:59:51 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2019/month=2/day=4/000055_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4048, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:51 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:51 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=9/000056_0, range: 0-4047, partition values: [2018,1,9]
+20/06/06 20:59:52 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=9/000056_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4047, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:52 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:52 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=11/day=15/000055_0, range: 0-4043, partition values: [2017,11,15]
+20/06/06 20:59:53 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=11/day=15/000055_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4043, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:53 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:53 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=28/000059_0, range: 0-4042, partition values: [2018,1,28]
+20/06/06 20:59:54 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=28/000059_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4042, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:54 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:54 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=23/000055_0, range: 0-4041, partition values: [2018,1,23]
+20/06/06 20:59:54 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=23/000055_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4041, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:54 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:55 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=9/000057_0, range: 0-4041, partition values: [2018,3,9]
+20/06/06 20:59:55 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=9/000057_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4041, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:55 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:56 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=26/000057_0, range: 0-4039, partition values: [2018,3,26]
+20/06/06 20:59:56 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=26/000057_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4039, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:56 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:57 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=25/000057_0, range: 0-4039, partition values: [2018,3,25]
+20/06/06 20:59:57 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=25/000057_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4039, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:57 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:57 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=17/000058_0, range: 0-4035, partition values: [2017,12,17]
+20/06/06 20:59:58 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=17/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4035, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:58 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:58 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=14/000056_0, range: 0-4033, partition values: [2018,2,14]
+20/06/06 20:59:58 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=14/000056_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4033, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:58 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 20:59:59 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2016/month=8/day=10/006556_0, range: 0-4032, partition values: [2016,8,10]
+20/06/06 20:59:59 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2016/month=8/day=10/006556_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false], offset: 0, length: 4032, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 20:59:59 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string>
+20/06/06 21:00:00 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=13/000058_0, range: 0-4022, partition values: [2018,2,13]
+20/06/06 21:00:00 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=13/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4022, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:00 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:00 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=18/000057_0, range: 0-4016, partition values: [2018,2,18]
+20/06/06 21:00:01 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=18/000057_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4016, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:01 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:02 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=3/000056_0, range: 0-4016, partition values: [2018,1,3]
+20/06/06 21:00:03 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=3/000056_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4016, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:03 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:04 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=24/000058_0, range: 0-4009, partition values: [2017,12,24]
+20/06/06 21:00:04 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=24/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4009, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:04 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:05 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2015/month=11/day=23/006557_0, range: 0-4006, partition values: [2015,11,23]
+20/06/06 21:00:05 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2015/month=11/day=23/006557_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false], offset: 0, length: 4006, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:05 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string>
+20/06/06 21:00:06 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=4/day=26/000056_0, range: 0-4005, partition values: [2018,4,26]
+20/06/06 21:00:06 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=4/day=26/000056_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4005, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:06 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:06 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=21/000058_0, range: 0-4004, partition values: [2018,3,21]
+20/06/06 21:00:07 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=21/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4004, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:07 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:07 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=5/day=11/000057_0, range: 0-4004, partition values: [2018,5,11]
+20/06/06 21:00:07 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=5/day=11/000057_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4004, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:07 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:08 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=22/000055_0, range: 0-4001, partition values: [2018,2,22]
+20/06/06 21:00:08 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=22/000055_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4001, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:08 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:09 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=10/000055_0, range: 0-4000, partition values: [2018,1,10]
+20/06/06 21:00:09 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=10/000055_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 4000, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:09 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:10 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2015/month=11/day=29/006558_0, range: 0-3999, partition values: [2015,11,29]
+20/06/06 21:00:10 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2015/month=11/day=29/006558_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false], offset: 0, length: 3999, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:10 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string>
+20/06/06 21:00:11 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=7/day=2/000055_0, range: 0-3999, partition values: [2018,7,2]
+20/06/06 21:00:11 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=7/day=2/000055_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3999, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:11 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:11 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=24/000058_0, range: 0-3998, partition values: [2018,1,24]
+20/06/06 21:00:12 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=1/day=24/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3998, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:12 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:12 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=15/000056_0, range: 0-3997, partition values: [2018,2,15]
+20/06/06 21:00:12 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=2/day=15/000056_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3997, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:12 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:13 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=13/000057_0, range: 0-3997, partition values: [2018,3,13]
+20/06/06 21:00:13 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=13/000057_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3997, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:13 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:14 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=14/000057_0, range: 0-3992, partition values: [2017,12,14]
+20/06/06 21:00:14 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=14/000057_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3992, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:14 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:14 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=10/000058_0, range: 0-3990, partition values: [2017,12,10]
+20/06/06 21:00:15 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2017/month=12/day=10/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3990, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:15 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:15 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=5/day=24/000058_0, range: 0-3989, partition values: [2018,5,24]
+20/06/06 21:00:15 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=5/day=24/000058_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3989, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:15 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:16 INFO FileScanRDD: Reading File path: s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=8/000056_0, range: 0-3985, partition values: [2018,3,8]
+20/06/06 21:00:16 INFO ReaderImpl: Reading ORC rows from s3://imvudata/user/hive/warehouse/events_etl.db/event_ui_imvu_account_events/year=2018/month=3/day=8/000056_0 with {include: [true, false, true, false, false, true, false, false, false, false, false, true, false, true], offset: 0, length: 3985, sarg: leaf-0 = (IS_NULL customers_id), expr = (not leaf-0), columns: ['event_time', 'customers_id', 'client_session', 'user_agent', 'user_agent_platform', 'url', 'email', 'dob', 'country', 'avatarname', 'reg_token_type', 'is_internal_ip', 'registration_flow'], includeAcidColumns: true}
+20/06/06 21:00:16 INFO RecordReaderImpl: Reader schema not provided -- using file schema struct<_col0:string,_col1:string,_col2:string,_col3:string,_col4:string,_col5:string,_col6:string,_col7:string,_col8:string,_col9:string,_col10:string,_col11:string,_col12:string>
+20/06/06 21:00:17 INFO CodeGenerator: Code generated in 8.691293 ms
+20/06/06 21:00:17 INFO CodeGenerator: Code generated in 11.051476 ms
+20/06/06 21:00:17 INFO CodeGenerator: Code generated in 6.791774 ms
+20/06/06 21:00:17 INFO CodeGenerator: Code generated in 6.788559 ms
+20/06/06 21:00:17 INFO CodeGenerator: Code generated in 12.637141 ms
+20/06/06 21:00:17 INFO Executor: Finished task 280.0 in stage 14.5 (TID 7470). 2592 bytes result sent to driver
+20/06/06 21:01:18 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+20/06/06 21:01:18 INFO DiskBlockManager: Shutdown hook called
+20/06/06 21:01:18 INFO ShutdownHookManager: Shutdown hook called
